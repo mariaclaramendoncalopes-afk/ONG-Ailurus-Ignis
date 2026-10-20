@@ -1,0 +1,127 @@
+:root{
+    --cor-verde-escuro: #1B3322;
+    --cor-marrom-escuro: #2A2421;
+    --cor-beje: #ecb582;
+    --cor-vermelho: #822110;
+    --cor-para-caixa: #F5FFE5E6;
+    --cor-para-caixa2: #F5FFE580;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--cor-vermelho);
+}
+
+body{
+    background-color: var(--cor-beje);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    padding: 20px 5%;
+    height: 60vh;
+
+    background-image: url(/imagens/panda_vermelho_fundo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor-para-caixa);
+    border-radius: 50%;
+}
+
+header h1{
+    padding: 10px 25px;
+    border-radius: 20px;
+
+    letter-spacing: 2px;
+
+    background-color: var(--cor-para-caixa);
+}
+
+.nav_bar ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav_bar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+    background-color: var(--cor-para-caixa);
+    border-radius: 20px;
+}
+
+.nav_bar a{
+    text-decoration: none;
+}
+
+.nav_bar li:hover{
+    background-color: var(--cor-beje);
+    color: var(--cor-verde-escuro);
+    transform: scale(1.10); /*aumenta ao passar o mouse*/
+}
+
+.inicio .slogan{
+    text-align: center;
+    padding: 10px;
+}
+
+/* .inicio*/ .caixas{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+    gap: 20px;
+}
+
+/* .inicio */ .caixa-tipo1{
+    padding: 20px;
+
+    width: 50%;
+    background-color: var(--cor-para-caixa2);
+}
+
+.inicio .caixa-inicio-2{
+    padding: 10px;
+}
+
+.sobre .apresentacao{
+    display: flex;
+}
+
+.projetos img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.projetos article img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
