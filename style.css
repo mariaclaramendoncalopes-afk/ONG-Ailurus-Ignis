@@ -4,20 +4,27 @@
     --cor-beje: #ecb582;
     --cor-vermelho: #822110;
     --cor-para-caixa: #F5FFE5E6;
-    --cor-branco: #ffffff;
+    --cor-marrom-esverdeado: #3A4032;
 }
 
-h2,
-h3,
-p{
+h2{
     text-align: center;
+    color: var(--cor-verde-escuro);
+}
+
+h3{
+    text-align: center;
+    color: var(--cor-marrom-esverdeado);
+}
+
+p{
+    color: var(--cor-marrom);
 }
 
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: var(--cor-vermelho);
 }
 
 body{
@@ -60,6 +67,7 @@ header h1{
     letter-spacing: 2px;
 
     background-color: var(--cor-para-caixa);
+    color: var(--cor-vermelho);
 }
 
 .nav_bar ul {
@@ -81,6 +89,7 @@ header h1{
 .nav_bar a{
     padding: 15px 20px; 
     text-decoration: none;
+    color: var(--cor-vermelho);
 }
 
 .nav_bar li:hover{
@@ -100,7 +109,12 @@ header h1{
     border-radius: 2px 2px 70px 70px;
 }
 
+.slogan h2{
+    color: var(--cor-vermelho);
+}
+
 .slogan p{
+    text-align: center;
     padding: 5px;
     color: var(--cor-marrom);
 }
@@ -142,70 +156,45 @@ header h1{
 }
 
 
-
-/*Apresentação da espécie*/
+.sobre,
 .conhecer-panda{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 0px;
     width: 95%;
-    max-width: 1400px;
     margin: 20px auto;
 }
 
-.texto-panda{
-    flex: 1;
-    text-align: center;
+.sobre .apresentacao,
+.conhecer-panda .conhecer-conteudo{
+    max-width: 1400px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+/*Apresentação da espécie*/
+.texto-panda{
     background-color: var(--cor-para-caixa);
     padding: 30px;
     border-radius: 70px 0px 0px 70px;
-
 }
 
 .texto-panda p{
-    padding: 15px;
-}
-
-.img-conhecer-panda{
-    flex: 1;
+    padding: 10px;
+    text-align: center;
+    /* color: var(--cor-vermelho); */
 }
 
 .img-conhecer-panda img{
-    width: 100%;
     max-width: 500px;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     border-radius: 30px;
 }
 
 
-/* .inicio .caixa-inicio-2{
-    text-align: center;
-
-    width: 40%;
-    margin: 0 auto;
-
-    background-color: var(--cor-para-caixa2);
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.inicio .caixa-inicio-2 button{
-    margin-top: 15px;
-    padding: 5px 5px;
-    background-color: var(--cor-beje);
-    border: none;
-    border-radius: 5px;
-} */
-
-
-
-
 /*Sobre nós*/
-.sobre{
+/* .sobre{
     width: 95%;
     margin: 20px auto;
 }
@@ -216,7 +205,7 @@ header h1{
     align-items: center;
     justify-content: center;
     gap: 0px;
-}
+} */
 
 .sobre .apresentacao .texto-sobre{
     background-color: var(--cor-para-caixa);
@@ -227,10 +216,14 @@ header h1{
 .sobre .apresentacao .texto-sobre p{
     padding: 10px;
     text-align: left;
+    /* color: var(--cor-vermelho); */
 }
 
 .sobre .imagem-sobre img{
-    border-radius: 20px;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 
@@ -304,7 +297,7 @@ header h1{
 }
 
 .galeria img{
-    width: 400px;
+    width: 450px;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
@@ -342,6 +335,10 @@ header h1{
     transform: scale(1.05); 
 }
 
+.doar p{
+    color: var(--cor-para-caixa);
+}
+
 .doar img{
     width: 400px;
     height: 250px;
@@ -352,6 +349,59 @@ header h1{
 .doar .container-doacao h3{
     color: var(--cor-beje);
 }
-/* .doar .container-doacao p {
-    color: var(--cor-para-caixa);
-} não apresenta um paragrafo ainda*/
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor-verde-escuro);
+
+    margin-top: 80px;
+}
+
+footer h2,
+footer h3,
+footer p{
+    color: var(--cor-beje);
+}
+
+.container-rodape {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+   /*  max-width: 1400px;*/
+}
+
+.rodape-info img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.rodape-info h2{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.rodape-nav_bar, .contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-nav_bar, ul, a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+.contato img{
+    width: 150px;
+}
+
+.rodape{
+    width: 99%;
+    text-align: end;
+}
