@@ -133,6 +133,7 @@ header h1{
 .caixa-tipo1 h3{
     color: var(--cor-beje);
 }
+
 .caixa-tipo1 p,
 .caixa-tipo1 a{
     color: var(--cor-para-caixa);
@@ -140,6 +141,45 @@ header h1{
     text-decoration: none;
 }
 
+
+
+/*Apresentação da espécie*/
+.conhecer-panda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.texto-panda{
+    flex: 1;
+    text-align: center;
+
+    background-color: var(--cor-para-caixa);
+    padding: 30px;
+    border-radius: 70px 0px 0px 70px;
+
+}
+
+.texto-panda p{
+    padding: 15px;
+}
+
+.img-conhecer-panda{
+    flex: 1;
+}
+
+.img-conhecer-panda img{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+}
 
 
 /* .inicio .caixa-inicio-2{
@@ -165,8 +205,28 @@ header h1{
 
 
 /*Sobre nós*/
+.sobre{
+    width: 95%;
+    margin: 20px auto;
+}
 .sobre .apresentacao{
+    max-width: 1400px;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.sobre .apresentacao .texto-sobre{
+    background-color: var(--cor-para-caixa);
+    padding: 30px;
+    border-radius: 0px 70px 70px 0px;
+}
+
+.sobre .apresentacao .texto-sobre p{
+    padding: 10px;
+    text-align: left;
 }
 
 .sobre .imagem-sobre img{
