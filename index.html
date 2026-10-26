@@ -201,48 +201,39 @@
                 <div class="container-galeria">
                     <figure class="midia">
                         <img src="/imagens/familia-pandas.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                     
                     <figure class="midia">
                         <img src="/imagens/projeto-guardioes2.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                     
                     <figure class="midia">
                         <img src="/imagens/Bambus.jpg" alt="">  
-                        <figcaption></figcaption>
                     </figure>
                     
                     <figure class="midia">
                         <img src="/imagens/ambiente.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
 
                     <figure class="midia">
                         <img src="/imagens/pandas-interacao.jpg" alt="">                        
-                        <figcaption></figcaption>
                     </figure>
 
                     <figure class="midia">
                         <img src="/imagens/INDO-MALAYAN.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                     
 
                     <figure class="midia">
                         <img src="/imagens/monitoramento.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                     
                     <figure class="midia">
                         <img src="/imagens/projeto-excursao.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                     
                     <figure class="midia">
                         <img src="/imagens/panda-natureza.jpg" alt="">
-                        <figcaption></figcaption>
                     </figure>
                 </div>
             </article>
@@ -254,8 +245,8 @@
             <h3>Não deixe a chama se apagar</h3>
 
             <div class="container-doacao">
-                <a href="#" class="midia">
-                    <img src="/imagens/panda_vermelhopetAJ.jpg" alt="">
+                <a href="#formulario" class="midia">
+                    <img src="/imagens/doacao.jpg" alt="">
                     <h3>Doação</h3>
                     <p>
                         Sua contribuição financeira ajuda diretamente 
@@ -265,8 +256,8 @@
                     </p>
                 </a>
 
-                <a href="#" class="midia">
-                    <img src="/imagens/panda_vermelhopetAJ.jpg" alt="">
+                <a href="#formulario" class="midia">
+                    <img src="/imagens/apadrinhar-panda.jpg" alt="">
                     <h3>Apadrinhe um Panda-Vermelho</h3>
                     <p>
                         Com um apoio mensal contínuo, 
@@ -276,8 +267,8 @@
                     </p>
                 </a>
 
-                <a href="#" class="midia">
-                    <img src="/imagens/panda_vermelhopetAJ.jpg" alt="">
+                <a href="#formulario" class="midia">
+                    <img src="/imagens/voluntario.jpg" alt="">
                     <h3>Seja um voluntário</h3>
                     <p>
                         Doe seu tempo e habilidades! 
@@ -287,6 +278,71 @@
                         ou suporte técnico no nosso site.
                     </p> 
                 </a> 
+            </div>
+
+            <div class="container-formulario" id="formulario">
+                
+                <form action="" class="formulario">
+                    
+                    <div class="cadastro-titulo">
+                        <img src="/imagens/logo.png" alt="">
+                        <h2>Cadastre-se</h2>
+                        <h3>Ajude-nos a retomar essa chama</h3>                        
+                    </div>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input 
+                        type="text"
+                        name="nome" 
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    />
+
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="email@gmail.com"
+                        required
+                    />
+
+                    <label for="telefone">Telefone:</label>
+                    <input 
+                        type="tel" 
+                        name="telefone" 
+                        id="telefone"
+                        placeholder="(83) 9 1234-5678"
+                        required
+                    />
+
+                    <label for="tipo-ajuda">Selecione como deseja ajudar:</label>
+                    <select name="tipo-ajuda" id="tipo-ajuda">
+                        <option value="doacao">Doação</option>
+                        <option value="apadrinhar">Apadrinhar Panda-vermelho</option>
+                        <option value="voluntariar">Voluntariar-se</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                        name="mensagem" 
+                        id="mensagem"
+                        rows="5"
+                        required
+                        placeholder="Conte-nos como gostaria de participar..."></textarea>
+
+                    <span class="termos">
+                        <label for="termos">
+                        <input type="checkbox" name="termos" id="termos">
+                        Concordo em receber informações sobre as ações do Instituto.
+                        </label>
+                    </span>
+
+                    <button>Cadastrar</button>
+                    
+                </form>
+
             </div>
         </section>
 
@@ -321,10 +377,10 @@
             <div class="contato" id="contato">
                 <h3>Entre em contato</h3>
 
-                <p>contactAI@ailurusignis.org</p>
-                <p>@InstIgnisAilurs</p>
+                <p>Email: contactAI@ailurusignis.org</p>
+                <p>Redes sociais: @instignisailurs</p>
 
-                <img src="/imagens/panda_vermelhopetAJ.jpg" alt="">
+                <img src="/imagens/panda-vermelho-desenho.png" alt="">
             </div>
         </div>
         <div class="rodape">

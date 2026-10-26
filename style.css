@@ -54,7 +54,8 @@ header .logo{
 
 header .logo img{
     display: flex;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 150px;
     background-color: var(--cor-para-caixa);
     border-radius: 50%;
@@ -119,11 +120,12 @@ header h1{
     color: var(--cor-marrom);
 }
 
-
 .caixas{
     text-align: center;
     display: flex;
     flex-direction: row;
+
+    flex-wrap: wrap;
 
     padding: 20px;
     gap: 20px;
@@ -136,12 +138,13 @@ header h1{
     margin: 0 auto;
 
     width: 40%;
-    background-color: var(--cor-marrom);
-    box-shadow: -5px 6px 3px #453628cf;
+    background-color: var(--cor-vermelho);
+    box-shadow: -5px 6px 3px #3c1009cf;
 }
 
 .inicio .caixa-tipo1:hover{
     transform: scale(1.05);
+    animation: sombraAnimada 4s infinite ease-in-out;
 }
 
 .caixa-tipo1 h3{
@@ -194,19 +197,6 @@ header h1{
 
 
 /*Sobre nós*/
-/* .sobre{
-    width: 95%;
-    margin: 20px auto;
-}
-.sobre .apresentacao{
-    max-width: 1400px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-} */
-
 .sobre .apresentacao .texto-sobre{
     background-color: var(--cor-para-caixa);
     padding: 30px;
@@ -231,7 +221,7 @@ header h1{
 /*Projetos*/
 .projetos .container-projetos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 
     width: 90%;
@@ -247,7 +237,8 @@ header h1{
 }
 
 .projetos img{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
@@ -274,8 +265,8 @@ header h1{
 
 .galeria .container-galeria{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     padding: 10px;
     justify-content: center;
     
@@ -297,24 +288,24 @@ header h1{
 }
 
 .galeria img{
-    width: 450px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
     object-fit: cover;
     border-radius: 20px;
-}
-
-.galeria .midia figcaption{
-    padding: 5px;
-    color: var(--cor-verde-escuro);
 }
 
 
 
 
 /*doar*/
+.doar h2{
+    margin-top: 30px;
+}
+
 .doar .container-doacao{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
 
     width: 95%;
@@ -332,6 +323,7 @@ header h1{
 }
 
 .doar .container-doacao .midia:hover{
+    animation: bordaAnimada 5s infinite ease-in-out;
     transform: scale(1.05); 
 }
 
@@ -340,7 +332,8 @@ header h1{
 }
 
 .doar img{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
@@ -350,10 +343,102 @@ header h1{
     color: var(--cor-beje);
 }
 
-/*Rodapé*/
+
+.cadastro-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cadastro-titulo img{
+    width: 100%;
+    max-width: 70px;
+    height: 70px;
+}
+
+.container-formulario h3{
+    color: var(--cor-vermelho);
+}
+
+.container-formulario label{
+    color: var(--cor-marrom-esverdeado);
+}
+
+.container-formulario{
+    background-color: var(--cor-para-caixa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 3px solid var(--cor-vermelho);
+    border-radius: 30px;
+}
+
+.formulario{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: var(--cor-marrom-esveverdeado);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-vermelho);
+    color: var(--cor-marrom);
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea{
+    outline: none;
+    border: 2px solid var(--cor-beje);
+}
+
+.formulario select:hover{
+    cursor: pointer;
+}
+
+.formulario .termos input{
+    accent-color: var(--cor-vermelho);
+}
+
+.formulario .termos input:hover{
+    cursor: pointer;
+}
+
+.formulario button{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    color: var(--cor-para-caixa);
+    background-color: var(--cor-marrom-esverdeado);
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    color: var(--cor-beje);
+    background-color: var(--cor-marrom);
+}
+
+
 footer{
     background-color: var(--cor-verde-escuro);
-
     margin-top: 80px;
 }
 
@@ -372,7 +457,6 @@ footer p{
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
-   /*  max-width: 1400px;*/
 }
 
 .rodape-info img{
@@ -394,7 +478,11 @@ footer p{
 .rodape-nav_bar, ul, a{
     list-style: none;
     text-decoration: none;
-    color: var(--cor-vermelho);
+    color: var(--cor-para-caixa);
+}
+
+.rodape-nav_bar li{
+    padding-bottom: 5px;
 }
 
 .contato img{
@@ -404,4 +492,63 @@ footer p{
 .rodape{
     width: 99%;
     text-align: end;
+}
+
+@keyframes sombraAnimada {
+    0%, 100%{
+        box-shadow:-5px 6px 3px #226f3bc9;
+    }
+    25%, 75%{
+        box-shadow:-5px 6px 3px #125125d3;
+    }
+    50%{
+        box-shadow:-5px 6px 3px #073b18db;
+    }
+}
+
+@keyframes bordaAnimada {
+    0%{
+        border: 3px solid #ff0000;
+        box-shadow: 5px 6px 3px #ff000067; 
+    }
+    10%{
+        border: 3px solid #ff6f00;
+        box-shadow: -5px 6px 3px #ff6f0067;
+    }
+    20%{
+        border: 3px solid #ff9500;
+        box-shadow: 5px 6px 3px #ff950067;
+    }
+    30%{
+        border: 3px solid #ffee00;
+        box-shadow: -5px 6px 3px #ffee0067;
+    }
+    40%{
+        border: 3px solid #6fff00;
+        box-shadow: 5px 6px 3px #6fff0067;
+    }
+    50%{
+        border: 3px solid #00ff00;
+        box-shadow: -5px 6px 3px #00ff0067;
+    }
+    60%{
+        border: 3px solid #00ffdd;
+        box-shadow: 5px 6px 3px #00ffdd67;
+    }
+    70%{
+        border: 3px solid #00aaff;
+        box-shadow: -5px 6px 3px #00aaff67;
+    }
+    80%{
+        border: 3px solid #001aff;
+        box-shadow: 5px 6px 3px #001aff67;
+    }
+    90%{
+        border: 3px solid #5500ff;
+        box-shadow: -5px 6px 3px #5500ff67;
+    }
+    100%{
+        border: 3px solid #ff00bb;
+        box-shadow: 5px 6px 3px #ff00bb67;
+    }
 }
