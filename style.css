@@ -175,7 +175,6 @@ header h1{
     gap: 0px;
 }
 
-/*Apresentação da espécie*/
 .texto-panda{
     background-color: var(--cor-para-caixa);
     padding: 30px;
@@ -185,12 +184,11 @@ header h1{
 .texto-panda p{
     padding: 10px;
     text-align: center;
-    /* color: var(--cor-vermelho); */
 }
 
 .img-conhecer-panda img{
-    max-width: 500px;
-    height: 400px;
+    max-width: 1200px;
+    height: 450px;
     object-fit: cover;
     border-radius: 30px;
 }
@@ -210,7 +208,7 @@ header h1{
 }
 
 .sobre .imagem-sobre img{
-    max-width: 500px;
+    max-width: 1200px;
     height: 350px;
     object-fit: cover;
     border-radius: 30px;
@@ -238,8 +236,8 @@ header h1{
 
 .projetos img{
     width: 100%;
-    max-width: 400px;
-    height: 250px;
+    max-width: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -400,7 +398,7 @@ header h1{
 
 .formulario input:focus,
 .formulario select:focus,
-.formulario textarea{
+.formulario textarea:focus{
     outline: none;
     border: 2px solid var(--cor-beje);
 }
@@ -418,7 +416,7 @@ header h1{
 }
 
 .formulario button{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     margin-top: 10px;
     padding: 5px;
@@ -550,5 +548,77 @@ footer p{
     100%{
         border: 3px solid #ff00bb;
         box-shadow: 5px 6px 3px #ff00bb67;
+    }
+}
+
+@media (max-width: 575px){
+    body{
+        background-color: #6fff00;
+    }
+
+    .sobre .apresentacao,
+    .conhecer-panda .conhecer-conteudo{
+        flex-direction: column;
+    }
+
+    .conhecer-panda .img-conhecer-panda{
+        order: -1;
+    }
+
+    .sobre .apresentacao .texto-sobre,
+    .texto-panda{
+        border-radius: 0px 0px 70px 70px;
+    }
+
+    .img-conhecer-panda img{
+        width: 100%;
+        max-width: 1200px;
+
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .sobre .imagem-sobre img{
+        width: 100%;
+        max-width: 1200px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:1150px){
+    body{
+        background-color: #001aff;
+    }
+
+    .sobre .apresentacao,
+    .conhecer-panda .conhecer-conteudo{
+        flex-direction: column;
+    }
+
+    .conhecer-panda .img-conhecer-panda{
+        order: -1;
+    }
+
+    .sobre .apresentacao .texto-sobre,
+    .texto-panda{
+        border-radius: 0px 0px 70px 70px;
+    }
+
+    .img-conhecer-panda img{
+        width: 100%;
+        max-width: 1200px;
+
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .sobre .imagem-sobre img{
+        width: 100%;
+        max-width: 1200px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 30px;
     }
 }
