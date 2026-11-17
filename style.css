@@ -146,7 +146,7 @@ header h1{
 
 .inicio .caixa-tipo1:hover{
     transform: scale(1.05);
-    animation: sombraAnimada 4s infinite ease-in-out;
+    animation: bordaAnimada 4s infinite ease-in-out;
 }
 
 .caixa-tipo1 h3{
@@ -494,18 +494,6 @@ footer p{
     text-align: end;
 }
 
-@keyframes sombraAnimada {
-    0%, 100%{
-        box-shadow:-5px 6px 3px #226f3bc9;
-    }
-    25%, 75%{
-        box-shadow:-5px 6px 3px #125125d3;
-    }
-    50%{
-        box-shadow:-5px 6px 3px #073b18db;
-    }
-}
-
 @keyframes bordaAnimada {
     0%{
         border: 3px solid #ff0000;
@@ -658,4 +646,24 @@ footer p{
     .container-formulario{
         width: 80%;
     }
+}
+
+.formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px;
+    border: 2px solid var(--cor-vermelho);
+    border-radius: 15px;
+}
+
+.formulario legend {
+    padding: 0 10px;
+    color: var(--cor-verde-escuro);
+    font-weight: bold;
+}
+
+.formulario [hidden] {
+    display: none;
 }
